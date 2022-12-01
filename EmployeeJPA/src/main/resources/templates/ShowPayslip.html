@@ -25,14 +25,14 @@
 
         <!<!-- TABLE DATA - for each employee in Model And View Object, give a row with details -->
         <tr>
-
+            
             <td th:text="${payslip.employee.empName}"></td>
-            <td th:text="${employee.empName}"></td>
-            <td th:text="${employee.empDesignation}"></td>
-            <td th:text="${employee.empDepartment}"></td>
-            <td th:text="${employee.empSalary}"></td>
-            <td th:text="${employee.dateOfJoining}"></td>
+            <td th:text="${payslip.allowanceA}"></td>
+            <td th:text="${payslip.allowanceB}"></td>
+            <td th:text="${payslip.deduction}"></td>
+            <td th:text="${payslip.totalSalary}"></td>
         </tr>
+        
 
     </table>
     <br><br>

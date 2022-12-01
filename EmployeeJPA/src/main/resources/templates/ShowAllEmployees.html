@@ -10,8 +10,8 @@
 <body>
     <h1> Employee Management System </h1>
     <hr>
-    <h2>Employee Pay Slip</h2>
-    <table border="1" color="red">
+    <h2>List Of Employees</h2>
+    <table border="1">
 
         <!<!-- TABLE ROW -->
         <tr>
@@ -26,13 +26,14 @@
         </tr>
 
         <!<!-- TABLE DATA -->
-        <tr>
-
-            <td th:text="${payslip.employee}"></td>
-            <td th:text="${payslip.allowanceA}"></td>
-            <td th:text="${payslip.allowanceB}"></td>
-            <td th:text="${payslip.deduction}"></td>
-            <td th:text="${payslip.totalSalary}"></td>
+        <tr th:each="employee : ${employees}">
+            
+            <td th:text="${employee.empId}"></td>
+            <td th:text="${employee.empName}"></td>
+            <td th:text="${employee.empDesignation}"></td>
+            <td th:text="${employee.empDepartment}"></td>
+            <td th:text="${employee.empSalary}"></td>
+            <td th:text="${employee.dateOfJoining}"></td>
             
         </tr>
 
