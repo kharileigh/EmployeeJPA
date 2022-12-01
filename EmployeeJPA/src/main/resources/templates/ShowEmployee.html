@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        
+        <h1>Employee Management System</h1>
+        
+        <hr> <!<!-- Horizontal Row -->
+    
+        <h2> List Of Employees </h2>
+        
+        <table border="1">
+            <tr>
+                <th>Employee ID</th>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Date Of Joining</th> 
+            </tr>
+            
+            <tr>
+                <td th:text="${employee.empId}"></td>
+                <td th:text="${employee.empName}"></td>
+                <td th:text="${employee.empDesignation}"></td>
+                <td th:text="${employee.empDepartment}"></td>
+                <td th:text="${employee.empSalary}"></td>
+                <td th:text="${employee.dateOfJoining}"></td>
+            </tr>
+            
+        </table>
+        <br><br>
+        <a href="./">Return To Main Page</a>
+        
+    </body>
+</html>
